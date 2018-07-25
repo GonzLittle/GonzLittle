@@ -37,15 +37,25 @@ Partial Class MainForm
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.mtreport = New MetroFramework.Controls.MetroTile()
-        Me.MetroTile2 = New MetroFramework.Controls.MetroTile()
+        Me.mtuser = New MetroFramework.Controls.MetroTile()
+        Me.mtmaintenance = New MetroFramework.Controls.MetroTile()
         Me.MetroTile1 = New MetroFramework.Controls.MetroTile()
-        Me.MetroTile4 = New MetroFramework.Controls.MetroTile()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.BunifuTileButton3 = New Bunifu.Framework.UI.BunifuTileButton()
+        Me.BunifuTileButton4 = New Bunifu.Framework.UI.BunifuTileButton()
+        Me.BunifuTileButton5 = New Bunifu.Framework.UI.BunifuTileButton()
+        Me.BunifuTileButton1 = New Bunifu.Framework.UI.BunifuTileButton()
+        Me.BunifuTileButton2 = New Bunifu.Framework.UI.BunifuTileButton()
+        Me.MetroTile2 = New MetroFramework.Controls.MetroTile()
         Msm = New MetroFramework.Components.MetroStyleManager(Me.components)
         CType(Msm, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox9.SuspendLayout()
         Me.MetroPanel1.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Msm
@@ -64,7 +74,7 @@ Partial Class MainForm
         Me.GroupBox9.Controls.Add(Me.Button6)
         Me.GroupBox9.Font = New System.Drawing.Font("Segoe UI Light", 8.25!)
         Me.GroupBox9.ForeColor = System.Drawing.Color.White
-        Me.GroupBox9.Location = New System.Drawing.Point(542, 38)
+        Me.GroupBox9.Location = New System.Drawing.Point(5, 395)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(71, 332)
         Me.GroupBox9.TabIndex = 38
@@ -209,103 +219,272 @@ Partial Class MainForm
         Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button6.UseVisualStyleBackColor = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox1.BackgroundImage = Global.HRISv3.My.Resources.Resources.I_LOVE_LA_UNION_LOGO
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(5, 11)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(66, 63)
+        Me.PictureBox1.TabIndex = 39
+        Me.PictureBox1.TabStop = False
+        '
         'mtreport
         '
         Me.mtreport.ActiveControl = Nothing
+        Me.mtreport.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.mtreport.BackColor = System.Drawing.Color.Teal
         Me.mtreport.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.mtreport.Location = New System.Drawing.Point(77, 94)
+        Me.mtreport.Location = New System.Drawing.Point(557, 316)
         Me.mtreport.Name = "mtreport"
-        Me.mtreport.Size = New System.Drawing.Size(403, 89)
+        Me.mtreport.Size = New System.Drawing.Size(120, 120)
         Me.mtreport.TabIndex = 37
-        Me.mtreport.Text = "Reports"
+        Me.mtreport.Text = "HRIS"
         Me.mtreport.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.mtreport.TileImage = Global.HRISv3.My.Resources.Resources.report_30px
+        Me.mtreport.TileImage = CType(resources.GetObject("mtreport.TileImage"), System.Drawing.Image)
         Me.mtreport.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.mtreport.UseCustomBackColor = True
         Me.mtreport.UseSelectable = True
         Me.mtreport.UseTileImage = True
         '
-        'MetroTile2
+        'mtuser
         '
-        Me.MetroTile2.ActiveControl = Nothing
-        Me.MetroTile2.BackColor = System.Drawing.Color.Green
-        Me.MetroTile2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MetroTile2.Location = New System.Drawing.Point(212, 185)
-        Me.MetroTile2.Name = "MetroTile2"
-        Me.MetroTile2.Size = New System.Drawing.Size(133, 124)
-        Me.MetroTile2.TabIndex = 36
-        Me.MetroTile2.Text = "User"
-        Me.MetroTile2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.MetroTile2.TileImage = Global.HRISv3.My.Resources.Resources.user
-        Me.MetroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.MetroTile2.UseCustomBackColor = True
-        Me.MetroTile2.UseSelectable = True
-        Me.MetroTile2.UseTileImage = True
+        Me.mtuser.ActiveControl = Nothing
+        Me.mtuser.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.mtuser.BackColor = System.Drawing.Color.SeaGreen
+        Me.mtuser.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.mtuser.Location = New System.Drawing.Point(680, 316)
+        Me.mtuser.Name = "mtuser"
+        Me.mtuser.Size = New System.Drawing.Size(120, 120)
+        Me.mtuser.TabIndex = 36
+        Me.mtuser.Text = "ID Manager"
+        Me.mtuser.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.mtuser.TileImage = CType(resources.GetObject("mtuser.TileImage"), System.Drawing.Image)
+        Me.mtuser.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.mtuser.UseCustomBackColor = True
+        Me.mtuser.UseSelectable = True
+        Me.mtuser.UseTileImage = True
+        '
+        'mtmaintenance
+        '
+        Me.mtmaintenance.ActiveControl = Nothing
+        Me.mtmaintenance.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.mtmaintenance.BackColor = System.Drawing.Color.DodgerBlue
+        Me.mtmaintenance.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.mtmaintenance.Location = New System.Drawing.Point(803, 316)
+        Me.mtmaintenance.Name = "mtmaintenance"
+        Me.mtmaintenance.Size = New System.Drawing.Size(120, 120)
+        Me.mtmaintenance.TabIndex = 35
+        Me.mtmaintenance.Text = "Maintenance"
+        Me.mtmaintenance.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.mtmaintenance.TileImage = CType(resources.GetObject("mtmaintenance.TileImage"), System.Drawing.Image)
+        Me.mtmaintenance.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.mtmaintenance.UseCustomBackColor = True
+        Me.mtmaintenance.UseSelectable = True
+        Me.mtmaintenance.UseTileImage = True
         '
         'MetroTile1
         '
         Me.MetroTile1.ActiveControl = Nothing
-        Me.MetroTile1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.MetroTile1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.MetroTile1.BackColor = System.Drawing.Color.FromArgb(CType(CType(188, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.MetroTile1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MetroTile1.Location = New System.Drawing.Point(347, 185)
+        Me.MetroTile1.Location = New System.Drawing.Point(434, 316)
         Me.MetroTile1.Name = "MetroTile1"
-        Me.MetroTile1.Size = New System.Drawing.Size(133, 124)
-        Me.MetroTile1.TabIndex = 35
-        Me.MetroTile1.Text = "Maintenance"
+        Me.MetroTile1.Size = New System.Drawing.Size(120, 120)
+        Me.MetroTile1.TabIndex = 40
+        Me.MetroTile1.Text = "HR DocTrack"
         Me.MetroTile1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.MetroTile1.TileImage = Global.HRISv3.My.Resources.Resources.Maintenance_30px
+        Me.MetroTile1.TileImage = CType(resources.GetObject("MetroTile1.TileImage"), System.Drawing.Image)
         Me.MetroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.MetroTile1.UseCustomBackColor = True
         Me.MetroTile1.UseSelectable = True
         Me.MetroTile1.UseTileImage = True
         '
-        'MetroTile4
+        'TableLayoutPanel1
         '
-        Me.MetroTile4.ActiveControl = Nothing
-        Me.MetroTile4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MetroTile4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MetroTile4.Location = New System.Drawing.Point(77, 185)
-        Me.MetroTile4.Name = "MetroTile4"
-        Me.MetroTile4.Size = New System.Drawing.Size(133, 124)
-        Me.MetroTile4.TabIndex = 34
-        Me.MetroTile4.Text = "Employee"
-        Me.MetroTile4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.MetroTile4.TileImage = Global.HRISv3.My.Resources.Resources.User_Groups_30px
-        Me.MetroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.MetroTile4.UseCustomBackColor = True
-        Me.MetroTile4.UseSelectable = True
-        Me.MetroTile4.UseTileImage = True
+        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.DarkGray
+        Me.TableLayoutPanel1.ColumnCount = 5
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTileButton3, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTileButton4, 3, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTileButton5, 4, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTileButton1, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.BunifuTileButton2, 0, 0)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(1063, 658)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 1
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(300, 68)
+        Me.TableLayoutPanel1.TabIndex = 43
+        '
+        'BunifuTileButton3
+        '
+        Me.BunifuTileButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BunifuTileButton3.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuTileButton3.color = System.Drawing.Color.Transparent
+        Me.BunifuTileButton3.colorActive = System.Drawing.Color.LightGray
+        Me.BunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTileButton3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BunifuTileButton3.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.BunifuTileButton3.ForeColor = System.Drawing.Color.DimGray
+        Me.BunifuTileButton3.Image = CType(resources.GetObject("BunifuTileButton3.Image"), System.Drawing.Image)
+        Me.BunifuTileButton3.ImagePosition = 5
+        Me.BunifuTileButton3.ImageZoom = 60
+        Me.BunifuTileButton3.LabelPosition = 18
+        Me.BunifuTileButton3.LabelText = "PS6"
+        Me.BunifuTileButton3.Location = New System.Drawing.Point(124, 5)
+        Me.BunifuTileButton3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BunifuTileButton3.Name = "BunifuTileButton3"
+        Me.BunifuTileButton3.Size = New System.Drawing.Size(52, 58)
+        Me.BunifuTileButton3.TabIndex = 45
+        '
+        'BunifuTileButton4
+        '
+        Me.BunifuTileButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BunifuTileButton4.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuTileButton4.color = System.Drawing.Color.Transparent
+        Me.BunifuTileButton4.colorActive = System.Drawing.Color.LightGray
+        Me.BunifuTileButton4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTileButton4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BunifuTileButton4.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.BunifuTileButton4.ForeColor = System.Drawing.Color.DimGray
+        Me.BunifuTileButton4.Image = CType(resources.GetObject("BunifuTileButton4.Image"), System.Drawing.Image)
+        Me.BunifuTileButton4.ImagePosition = 5
+        Me.BunifuTileButton4.ImageZoom = 60
+        Me.BunifuTileButton4.LabelPosition = 18
+        Me.BunifuTileButton4.LabelText = "Video"
+        Me.BunifuTileButton4.Location = New System.Drawing.Point(184, 5)
+        Me.BunifuTileButton4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BunifuTileButton4.Name = "BunifuTileButton4"
+        Me.BunifuTileButton4.Size = New System.Drawing.Size(52, 58)
+        Me.BunifuTileButton4.TabIndex = 46
+        '
+        'BunifuTileButton5
+        '
+        Me.BunifuTileButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BunifuTileButton5.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuTileButton5.color = System.Drawing.Color.Transparent
+        Me.BunifuTileButton5.colorActive = System.Drawing.Color.LightGray
+        Me.BunifuTileButton5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTileButton5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BunifuTileButton5.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.BunifuTileButton5.ForeColor = System.Drawing.Color.DimGray
+        Me.BunifuTileButton5.Image = CType(resources.GetObject("BunifuTileButton5.Image"), System.Drawing.Image)
+        Me.BunifuTileButton5.ImagePosition = 5
+        Me.BunifuTileButton5.ImageZoom = 60
+        Me.BunifuTileButton5.LabelPosition = 18
+        Me.BunifuTileButton5.LabelText = "Access"
+        Me.BunifuTileButton5.Location = New System.Drawing.Point(244, 5)
+        Me.BunifuTileButton5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BunifuTileButton5.Name = "BunifuTileButton5"
+        Me.BunifuTileButton5.Size = New System.Drawing.Size(52, 58)
+        Me.BunifuTileButton5.TabIndex = 47
+        '
+        'BunifuTileButton1
+        '
+        Me.BunifuTileButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BunifuTileButton1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuTileButton1.color = System.Drawing.Color.Transparent
+        Me.BunifuTileButton1.colorActive = System.Drawing.Color.LightGray
+        Me.BunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTileButton1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BunifuTileButton1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.BunifuTileButton1.ForeColor = System.Drawing.Color.DimGray
+        Me.BunifuTileButton1.Image = CType(resources.GetObject("BunifuTileButton1.Image"), System.Drawing.Image)
+        Me.BunifuTileButton1.ImagePosition = 5
+        Me.BunifuTileButton1.ImageZoom = 60
+        Me.BunifuTileButton1.LabelPosition = 18
+        Me.BunifuTileButton1.LabelText = "SQL"
+        Me.BunifuTileButton1.Location = New System.Drawing.Point(64, 5)
+        Me.BunifuTileButton1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BunifuTileButton1.Name = "BunifuTileButton1"
+        Me.BunifuTileButton1.Size = New System.Drawing.Size(52, 58)
+        Me.BunifuTileButton1.TabIndex = 44
+        '
+        'BunifuTileButton2
+        '
+        Me.BunifuTileButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BunifuTileButton2.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuTileButton2.color = System.Drawing.Color.Transparent
+        Me.BunifuTileButton2.colorActive = System.Drawing.Color.LightGray
+        Me.BunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTileButton2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BunifuTileButton2.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.BunifuTileButton2.ForeColor = System.Drawing.Color.DimGray
+        Me.BunifuTileButton2.Image = CType(resources.GetObject("BunifuTileButton2.Image"), System.Drawing.Image)
+        Me.BunifuTileButton2.ImagePosition = 5
+        Me.BunifuTileButton2.ImageZoom = 60
+        Me.BunifuTileButton2.LabelPosition = 18
+        Me.BunifuTileButton2.LabelText = "PMIS"
+        Me.BunifuTileButton2.Location = New System.Drawing.Point(4, 5)
+        Me.BunifuTileButton2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.BunifuTileButton2.Name = "BunifuTileButton2"
+        Me.BunifuTileButton2.Size = New System.Drawing.Size(52, 58)
+        Me.BunifuTileButton2.TabIndex = 45
+        '
+        'MetroTile2
+        '
+        Me.MetroTile2.ActiveControl = Nothing
+        Me.MetroTile2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.MetroTile2.BackColor = System.Drawing.Color.DodgerBlue
+        Me.MetroTile2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.MetroTile2.Location = New System.Drawing.Point(929, 316)
+        Me.MetroTile2.Name = "MetroTile2"
+        Me.MetroTile2.Size = New System.Drawing.Size(120, 120)
+        Me.MetroTile2.TabIndex = 44
+        Me.MetroTile2.Text = "Maintenance"
+        Me.MetroTile2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.MetroTile2.TileImage = CType(resources.GetObject("MetroTile2.TileImage"), System.Drawing.Image)
+        Me.MetroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.MetroTile2.UseCustomBackColor = True
+        Me.MetroTile2.UseSelectable = True
+        Me.MetroTile2.UseTileImage = True
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.BackImagePadding = New System.Windows.Forms.Padding(420, 0, 0, 0)
         Me.BackMaxSize = 60
-        Me.ClientSize = New System.Drawing.Size(547, 374)
+        Me.ClientSize = New System.Drawing.Size(1366, 728)
+        Me.Controls.Add(Me.MetroTile2)
+        Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox9)
         Me.Controls.Add(Me.mtreport)
-        Me.Controls.Add(Me.MetroTile2)
+        Me.Controls.Add(Me.mtuser)
+        Me.Controls.Add(Me.mtmaintenance)
         Me.Controls.Add(Me.MetroTile1)
-        Me.Controls.Add(Me.MetroTile4)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "MainForm"
-        Me.Text = "Human Resource Information System"
+        Me.Resizable = False
+        Me.Style = MetroFramework.MetroColorStyle.Brown
+        Me.Text = "HRMD Integrated Systems"
+        Me.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Msm, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox9.ResumeLayout(False)
         Me.GroupBox9.PerformLayout()
         Me.MetroPanel1.ResumeLayout(False)
         Me.TableLayoutPanel7.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents MetroTile4 As MetroFramework.Controls.MetroTile
     Friend WithEvents mtreport As MetroFramework.Controls.MetroTile
-    Friend WithEvents MetroTile2 As MetroFramework.Controls.MetroTile
-    Friend WithEvents MetroTile1 As MetroFramework.Controls.MetroTile
+    Friend WithEvents mtuser As MetroFramework.Controls.MetroTile
+    Friend WithEvents mtmaintenance As MetroFramework.Controls.MetroTile
     Friend WithEvents GroupBox9 As GroupBox
     Friend WithEvents MetroPanel1 As MetroFramework.Controls.MetroPanel
     Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
@@ -317,4 +496,13 @@ Partial Class MainForm
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents MetroTile1 As MetroFramework.Controls.MetroTile
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents BunifuTileButton1 As Bunifu.Framework.UI.BunifuTileButton
+    Friend WithEvents BunifuTileButton2 As Bunifu.Framework.UI.BunifuTileButton
+    Friend WithEvents BunifuTileButton3 As Bunifu.Framework.UI.BunifuTileButton
+    Friend WithEvents BunifuTileButton4 As Bunifu.Framework.UI.BunifuTileButton
+    Friend WithEvents BunifuTileButton5 As Bunifu.Framework.UI.BunifuTileButton
+    Friend WithEvents MetroTile2 As MetroFramework.Controls.MetroTile
 End Class

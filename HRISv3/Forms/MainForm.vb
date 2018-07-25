@@ -6,16 +6,7 @@ Public Class MainForm
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'StyleManager = Msm
     End Sub
-    'from employee same theme to mdiparent
-    Private Sub MetroTile4_Click(sender As Object, e As EventArgs) Handles MetroTile4.Click
-        Try
-            Dim _frmemployee As New FrmEmployee
-            _frmemployee.StyleManager = Me.StyleManager
-            _frmemployee.ShowDialog()
-            _frmemployee.Dispose()
-        Catch ex As Exception
-        End Try
-    End Sub
+
     'light theme
     Private Sub MetroButton4_Click(sender As Object, e As EventArgs) Handles MetroButton4.Click
         'Try
@@ -84,11 +75,65 @@ Public Class MainForm
 
     Private Sub mtreport_Click(sender As Object, e As EventArgs) Handles mtreport.Click
         Try
-            Dim _Report As New Report
-            _Report.StyleManager = Me.StyleManager
-            _Report.ShowDialog()
-            _Report.Dispose()
+
+            'Dim _Report As New Report
+            '_Report.StyleManager = Me.StyleManager
+            '_Report.ShowDialog()
+            '_Report.Dispose()
+
+            ''Report.ShowDialog()
+            Report.Show()
+            Me.Hide()
         Catch ex As Exception
+            MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub mtmaintenance_Click(sender As Object, e As EventArgs) Handles mtmaintenance.Click
+        Maintenance.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub mtuser_Click(sender As Object, e As EventArgs) Handles mtuser.Click
+        Dim _cardfive As New cardfive.Form1
+        _cardfive.ShowDialog()
+    End Sub
+
+    Private Sub MetroTile1_Click(sender As Object, e As EventArgs) Handles MetroTile1.Click
+        Dim _doctrack As New HRdoCtraCk.loginform
+        _doctrack.ShowDialog()
+    End Sub
+
+
+    Private Sub BunifuTileButton2_Click(sender As Object, e As EventArgs) Handles BunifuTileButton2.Click
+        Process.Start("C:\Users\User\Documents\PMIS2010\pmispglu.exe")
+    End Sub
+
+    Private Sub BunifuTileButton1_Click(sender As Object, e As EventArgs) Handles BunifuTileButton1.Click
+        Process.Start("C:\SQL ADv\sqladv.exe")
+    End Sub
+
+    Private Sub BunifuTileButton5_Click(sender As Object, e As EventArgs) Handles BunifuTileButton5.Click
+        Process.Start("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office\Microsoft Access 2010.lnk")
+    End Sub
+
+    Private Sub BunifuTileButton3_Click(sender As Object, e As EventArgs) Handles BunifuTileButton3.Click
+        Process.Start("C:\Program Files\Adobe\Adobe Photoshop CS6 (64 Bit)\photoshop.exe")
+
+    End Sub
+
+    Private Sub BunifuTileButton4_Click(sender As Object, e As EventArgs) Handles BunifuTileButton4.Click
+        Process.Start("C:\Program Files (x86)\Photodex\ProShow Producer\proshow.exe")
+
+
+    End Sub
+
+    Private Sub MetroTile2_Click(sender As Object, e As EventArgs) Handles MetroTile2.Click
+
+
+        Form3.Show()
+
+
+
     End Sub
 End Class

@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HRISv3", "HRISv3\HRISv3.vbproj", "{4D99C4BB-A194-4313-AAB4-D7371962F18D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "cardfive", "..\cardfive_2\cardfive\cardfive.vbproj", "{B362866D-9EB8-4451-8AC1-2EF6E8F65557}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HRdoCtraCk", "..\HRdoCtraCk\HRdoCtraCk\HRdoCtraCk.vbproj", "{2981E1A0-290D-464A-A2EC-949492CED0E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,22 @@ Global
 		{4D99C4BB-A194-4313-AAB4-D7371962F18D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4D99C4BB-A194-4313-AAB4-D7371962F18D}.Release|x86.ActiveCfg = Release|x86
 		{4D99C4BB-A194-4313-AAB4-D7371962F18D}.Release|x86.Build.0 = Release|x86
+		{B362866D-9EB8-4451-8AC1-2EF6E8F65557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B362866D-9EB8-4451-8AC1-2EF6E8F65557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B362866D-9EB8-4451-8AC1-2EF6E8F65557}.Debug|x86.ActiveCfg = Debug|x86
+		{B362866D-9EB8-4451-8AC1-2EF6E8F65557}.Debug|x86.Build.0 = Debug|x86
+		{B362866D-9EB8-4451-8AC1-2EF6E8F65557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B362866D-9EB8-4451-8AC1-2EF6E8F65557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B362866D-9EB8-4451-8AC1-2EF6E8F65557}.Release|x86.ActiveCfg = Release|x86
+		{B362866D-9EB8-4451-8AC1-2EF6E8F65557}.Release|x86.Build.0 = Release|x86
+		{2981E1A0-290D-464A-A2EC-949492CED0E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2981E1A0-290D-464A-A2EC-949492CED0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2981E1A0-290D-464A-A2EC-949492CED0E2}.Debug|x86.ActiveCfg = Debug|x86
+		{2981E1A0-290D-464A-A2EC-949492CED0E2}.Debug|x86.Build.0 = Debug|x86
+		{2981E1A0-290D-464A-A2EC-949492CED0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2981E1A0-290D-464A-A2EC-949492CED0E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2981E1A0-290D-464A-A2EC-949492CED0E2}.Release|x86.ActiveCfg = Release|x86
+		{2981E1A0-290D-464A-A2EC-949492CED0E2}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
