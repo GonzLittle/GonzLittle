@@ -464,7 +464,7 @@ Partial Class MainForm
         Me.FileArchiver.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.FileArchiver.BackColor = System.Drawing.Color.DimGray
         Me.FileArchiver.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.FileArchiver.Location = New System.Drawing.Point(317, 134)
+        Me.FileArchiver.Location = New System.Drawing.Point(317, 166)
         Me.FileArchiver.Name = "FileArchiver"
         Me.FileArchiver.Size = New System.Drawing.Size(80, 95)
         Me.FileArchiver.TabIndex = 45
