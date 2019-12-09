@@ -23,13 +23,15 @@ Partial Class Report
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Report))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Report))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.MetroTextBox1 = New MetroFramework.Controls.MetroTextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MetroTile1 = New MetroFramework.Controls.MetroTile()
         Me.lblid = New MetroFramework.Controls.MetroLabel()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -57,22 +59,21 @@ Partial Class Report
         Me.txtcount = New System.Windows.Forms.Label()
         Me.MetroLabel12 = New MetroFramework.Controls.MetroLabel()
         Me.MetroComboBox3 = New MetroFramework.Controls.MetroComboBox()
-        Me.msm2 = New MetroFramework.Components.MetroStyleManager(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ctxmenu = New MetroFramework.Controls.MetroContextMenu(Me.components)
-        Me.MetroLabel6 = New MetroFramework.Controls.MetroLabel()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.msm2 = New MetroFramework.Components.MetroStyleManager(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ctxmenu = New MetroFramework.Controls.MetroContextMenu(Me.components)
         Me.EditToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UpdateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AllEmployeeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MetroLabel6 = New MetroFramework.Controls.MetroLabel()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox8.SuspendLayout()
@@ -83,7 +84,6 @@ Partial Class Report
         Me.TableLayoutPanel6.SuspendLayout()
         CType(Me.msm2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ctxmenu.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -98,6 +98,17 @@ Partial Class Report
         Me.GroupBox1.Size = New System.Drawing.Size(268, 474)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'MetroButton1
+        '
+        Me.MetroButton1.BackgroundImage = Global.HRISv3.My.Resources.Resources.search
+        Me.MetroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MetroButton1.Location = New System.Drawing.Point(230, 260)
+        Me.MetroButton1.Name = "MetroButton1"
+        Me.MetroButton1.Size = New System.Drawing.Size(32, 33)
+        Me.MetroButton1.Style = MetroFramework.MetroColorStyle.Red
+        Me.MetroButton1.TabIndex = 46
+        Me.MetroButton1.UseSelectable = True
         '
         'MetroTextBox1
         '
@@ -135,6 +146,19 @@ Partial Class Report
         Me.MetroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.MetroTextBox1.WaterMarkFont = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Italic)
         Me.MetroTextBox1.WithError = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox1.ErrorImage = Nothing
+        Me.PictureBox1.Location = New System.Drawing.Point(21, 21)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(223, 227)
+        Me.PictureBox1.TabIndex = 44
+        Me.PictureBox1.TabStop = False
         '
         'MetroTile1
         '
@@ -531,43 +555,6 @@ Partial Class Report
         Me.MetroComboBox3.TabIndex = 31
         Me.MetroComboBox3.UseSelectable = True
         '
-        'msm2
-        '
-        Me.msm2.Owner = Me
-        Me.msm2.Style = MetroFramework.MetroColorStyle.Teal
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(716, 555)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(279, 13)
-        Me.Label1.TabIndex = 45
-        Me.Label1.Text = "* Double-click the specific row to View/Modify/Update."
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Label1.Visible = False
-        '
-        'ctxmenu
-        '
-        Me.ctxmenu.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ctxmenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditToolStripMenuItem1, Me.EditToolStripMenuItem, Me.UpdateToolStripMenuItem, Me.PrintToolStripMenuItem, Me.ReportingToolStripMenuItem})
-        Me.ctxmenu.Name = "ctxmenu"
-        Me.ctxmenu.Size = New System.Drawing.Size(168, 114)
-        '
-        'MetroLabel6
-        '
-        Me.MetroLabel6.AutoSize = True
-        Me.MetroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall
-        Me.MetroLabel6.Location = New System.Drawing.Point(281, 166)
-        Me.MetroLabel6.Name = "MetroLabel6"
-        Me.MetroLabel6.Size = New System.Drawing.Size(153, 25)
-        Me.MetroLabel6.TabIndex = 46
-        Me.MetroLabel6.Tag = ""
-        Me.MetroLabel6.Text = "Department Name"
-        Me.MetroLabel6.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        '
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.Transparent
@@ -625,29 +612,30 @@ Partial Class Report
         Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button6.UseVisualStyleBackColor = False
         '
-        'MetroButton1
+        'msm2
         '
-        Me.MetroButton1.BackgroundImage = Global.HRISv3.My.Resources.Resources.search
-        Me.MetroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MetroButton1.Location = New System.Drawing.Point(230, 260)
-        Me.MetroButton1.Name = "MetroButton1"
-        Me.MetroButton1.Size = New System.Drawing.Size(32, 33)
-        Me.MetroButton1.Style = MetroFramework.MetroColorStyle.Red
-        Me.MetroButton1.TabIndex = 46
-        Me.MetroButton1.UseSelectable = True
+        Me.msm2.Owner = Me
+        Me.msm2.Style = MetroFramework.MetroColorStyle.Teal
         '
-        'PictureBox1
+        'Label1
         '
-        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.ErrorImage = Nothing
-        Me.PictureBox1.Location = New System.Drawing.Point(21, 21)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(223, 227)
-        Me.PictureBox1.TabIndex = 44
-        Me.PictureBox1.TabStop = False
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(716, 555)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(279, 13)
+        Me.Label1.TabIndex = 45
+        Me.Label1.Text = "* Double-click the specific row to View/Modify/Update."
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label1.Visible = False
+        '
+        'ctxmenu
+        '
+        Me.ctxmenu.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ctxmenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditToolStripMenuItem1, Me.EditToolStripMenuItem, Me.UpdateToolStripMenuItem, Me.PrintToolStripMenuItem, Me.ReportingToolStripMenuItem})
+        Me.ctxmenu.Name = "ctxmenu"
+        Me.ctxmenu.Size = New System.Drawing.Size(168, 114)
         '
         'EditToolStripMenuItem1
         '
@@ -692,6 +680,18 @@ Partial Class Report
         Me.AllEmployeeToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
         Me.AllEmployeeToolStripMenuItem.Text = "All Employee"
         '
+        'MetroLabel6
+        '
+        Me.MetroLabel6.AutoSize = True
+        Me.MetroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.MetroLabel6.Location = New System.Drawing.Point(281, 166)
+        Me.MetroLabel6.Name = "MetroLabel6"
+        Me.MetroLabel6.Size = New System.Drawing.Size(153, 25)
+        Me.MetroLabel6.TabIndex = 46
+        Me.MetroLabel6.Tag = ""
+        Me.MetroLabel6.Text = "Department Name"
+        Me.MetroLabel6.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        '
         'Report
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -713,6 +713,7 @@ Partial Class Report
         Me.Resizable = False
         Me.Text = "Report"
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
@@ -727,7 +728,6 @@ Partial Class Report
         Me.TableLayoutPanel6.PerformLayout()
         CType(Me.msm2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ctxmenu.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

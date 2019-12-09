@@ -115,7 +115,7 @@ Partial Class AddNewRecord
         Me.MetroTabControl1.Location = New System.Drawing.Point(11, 20)
         Me.MetroTabControl1.Multiline = True
         Me.MetroTabControl1.Name = "MetroTabControl1"
-        Me.MetroTabControl1.SelectedIndex = 1
+        Me.MetroTabControl1.SelectedIndex = 0
         Me.MetroTabControl1.Size = New System.Drawing.Size(631, 628)
         Me.MetroTabControl1.TabIndex = 48
         Me.MetroTabControl1.UseSelectable = True
@@ -236,7 +236,7 @@ Partial Class AddNewRecord
         Me.txt4.Location = New System.Drawing.Point(174, 108)
         Me.txt4.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
         Me.txt4.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
-        Me.txt4.MinimumSize = New System.Drawing.Size(4, 29)
+        Me.txt4.MinimumSize = New System.Drawing.Size(0, 29)
         Me.txt4.Name = "txt4"
         Me.txt4.ShowCheckBox = True
         Me.txt4.Size = New System.Drawing.Size(395, 29)
@@ -1277,20 +1277,20 @@ Partial Class AddNewRecord
         Me.ctxmenu.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ctxmenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditToolStripMenuItem, Me.SaveToolStripMenuItem})
         Me.ctxmenu.Name = "ctxmenu"
-        Me.ctxmenu.Size = New System.Drawing.Size(105, 48)
+        Me.ctxmenu.Size = New System.Drawing.Size(153, 70)
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Image = Global.HRISv3.My.Resources.Resources.Edit_52px
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(104, 22)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Image = Global.HRISv3.My.Resources.Resources.Save_52px
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(104, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'AddNewRecord

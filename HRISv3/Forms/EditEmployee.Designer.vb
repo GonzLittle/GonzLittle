@@ -1321,20 +1321,20 @@ Partial Class Editemployee
         Me.ctxmenu.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ctxmenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditToolStripMenuItem, Me.UpdateToolStripMenuItem})
         Me.ctxmenu.Name = "ctxmenu"
-        Me.ctxmenu.Size = New System.Drawing.Size(153, 70)
+        Me.ctxmenu.Size = New System.Drawing.Size(121, 48)
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Image = Global.HRISv3.My.Resources.Resources.Edit_File_30px
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'UpdateToolStripMenuItem
         '
         Me.UpdateToolStripMenuItem.Image = Global.HRISv3.My.Resources.Resources.Update_30px
         Me.UpdateToolStripMenuItem.Name = "UpdateToolStripMenuItem"
-        Me.UpdateToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UpdateToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
         Me.UpdateToolStripMenuItem.Text = "Update"
         '
         'Label22
